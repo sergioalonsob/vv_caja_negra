@@ -49,12 +49,7 @@ public class isSubListTest {
         assertEquals(-1, this.myList.isSubList(subList));
 
     }
-    @Test
-    public void testNotIn3(){
-        SingleLinkedListImpl<String> subList = new SingleLinkedListImpl<String>("A", "A", "S", "Z");
-        assertEquals(-1, this.myList.isSubList(subList));
 
-    }
     @Test
     public void testNotIn4(){
         SingleLinkedListImpl<String> subList = new SingleLinkedListImpl<String>("");
@@ -66,6 +61,18 @@ public class isSubListTest {
         SingleLinkedListImpl<String> EmptyList = new SingleLinkedListImpl<String>();
         SingleLinkedListImpl<String> subList = new SingleLinkedListImpl<String>("A");
         assertEquals(-1, EmptyList.isSubList(subList));
+
+    }
+    @Test
+    public void testDuplicated(){
+        SingleLinkedListImpl<String> myOtherList = new SingleLinkedListImpl<String>("A", "S", "Z","A", "S", "Z");
+        assertEquals(1, myOtherList.isSubList(myList));
+
+    }
+    @Test
+    public void testBothEmpty(){
+        SingleLinkedListImpl<String> myOtherList = new SingleLinkedListImpl<String>();
+        assertEquals(0, myOtherList.isSubList(myOtherList));
 
     }
 }

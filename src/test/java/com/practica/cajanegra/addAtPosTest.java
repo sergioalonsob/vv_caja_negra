@@ -94,13 +94,6 @@ public class addAtPosTest {
             "Z,  6, BEFMPZ",
             "[,  6, BEFMP",
 
-            "@,  20, BEFMP",
-            "A,  20, BEFMPA",
-            "B,  20, BEFMPB",
-            "S,  20, BEFMPS",
-            "Y,  20, BEFMPY",
-            "Z,  20, BEFMPZ",
-            "[,  20, BEFMP",
 
     })
     public void testInserting(String element, int position, String expected)  {

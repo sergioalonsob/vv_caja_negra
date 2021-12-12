@@ -1,5 +1,9 @@
 # Verificación y Validación del Software 2021
-GRUPO IWx-4x ``<- Modificar``
+GRUPO IWM-41 SERGIO ALONSO BENITO
+
+--  COMANDOS MAVEN  ---
+
+mvn test --> para correr los tests
 
 ## Instrucciones para utilizar este proyecto
 

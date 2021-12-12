@@ -32,13 +32,6 @@ public class addNTimesTest {
 
     @ParameterizedTest
     @CsvSource({
-            "@,  -1",
-            "A,  -1",
-            "B,  -1",
-            "S,  -1",
-            "Y,  -1",
-            "Z,  -1",
-            "[,  -1",
 
 
             "@,  0",
@@ -75,6 +68,14 @@ public class addNTimesTest {
             "Z,  2, BEFMPZZ",
             "[,  2, BEFMP",
 
+            "@,  3, BEFMP",
+            "A,  3, BEFMPAAA",
+            "B,  3, BEFMPBBB",
+            "S,  3, BEFMPSSS",
+            "Y,  3, BEFMPYYY",
+            "Z,  3, BEFMPZZZ",
+            "[,  3, BEFMP",
+
             "@,  10, BEFMP",
             "A,  10, BEFMPAAAAAAAAAA",
             "B,  10, BEFMPBBBBBBBBBB",
@@ -84,7 +85,7 @@ public class addNTimesTest {
             "[,  10, BEFMP",
 
     })
-    public void testInserting(String element, int n, String expected)  {
+    public void test_addNTimes(String element, int n, String expected)  {
         myList.addNTimes(element, n);
         assertEquals(convert(expected), this.myList.toString());
     }

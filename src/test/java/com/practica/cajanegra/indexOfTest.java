@@ -37,4 +37,13 @@ public class indexOfTest {
     public void testDuplicatedWrong()  {
         assertNotEquals(3, this.myList.indexOf("F"));
     }
+
+    @Test
+    public void testRight2()  {
+        assertEquals(4, this.myList.indexOf("M"));
+    }
+    @Test
+    public void testRight3()  {
+        assertEquals(5, this.myList.indexOf("P"));
+    }
 }
